@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jogo.js"></script>
+    </head>
+    <body onresize="ajustarTamanho()">
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png">
+                <img id="v2" src="imagens/coracao_cheio.png">
+                <img id="v3" src="imagens/coracao_cheio.png">
+            </div>
+            <div class="cronometro">Tempo restane: <span id="timing"></span></div>
+        </div>
+        <script> 
+             document.getElementById('timing').innerHTML = tempo 
+
+            var dropMosca = setInterval(function(){
+                positionRandom()
+            }, timingMosca)
+        </script>
+    </body>
+</html>
